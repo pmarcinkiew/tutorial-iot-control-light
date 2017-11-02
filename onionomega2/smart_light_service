@@ -4,7 +4,7 @@ START=99
 
 USE_PROCD=1
 
-BIN="sh nodejs /usr/bin/smart_light.js"
+BIN="sh export NODE_PATH=/root/node_modules; node /usr/bin/smart_light.js"
 
 start_service() {
     procd_open_instance
